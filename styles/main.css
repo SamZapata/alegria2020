@@ -1,5 +1,9 @@
 @import "bootstrap-overrides.css";
 
+main {
+  min-height: calc(100vh);
+}
+
 /* ----- Header ----- */
 header a.menu {
   color: white;
@@ -59,10 +63,12 @@ ul.scrollmenu a.nav-link.active {
 }
 
 footer {
+  bottom: 0;
 	background-color: #7b000b;
 	height: calc(100% + 2rem);
   padding: 2rem 0;
   color: white;
+  margin-top: 1rem;
 }
 
 footer a {
