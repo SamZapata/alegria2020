@@ -1,4 +1,9 @@
 @import "bootstrap-overrides.css";
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+body {
+  font-family: 'Nerko One', cursive;
+}
 
 main {
   min-height: calc(100vh);
