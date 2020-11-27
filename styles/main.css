@@ -31,6 +31,17 @@ header a.menu {
   width: calc(100%);
 }
 
+/* scrollmenu */
+#scrollmenu-options {
+  z-index: 10;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /* bottom: 20px; */
+}
+
 ul.scrollmenu {
   background-color: #333;
   overflow: auto;

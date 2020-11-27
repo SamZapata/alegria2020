@@ -22,8 +22,8 @@
           </video>
         </div>
       </section>
-      <section id="scroll-sections">
-        <div class="">
+      <section id="informative-sections">
+        <div id="scrollmenu-options">
           <ul class="scrollmenu nav nav-tabs" id="projectTabs" role="tablist">
             <li class="nav-item">
               <a class="nav-link active" id="objetives-tab" data-toggle="tab" href="#objetives-section" role="tab" aria-controls="objetives" aria-selected="true">Objetivos</a>
@@ -35,10 +35,10 @@
               <a class="nav-link" id="resources-tab" data-toggle="tab" href="#resources-section" role="tab" aria-controls="resources" aria-selected="false">Recursos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="outcomes-tab" data-toggle="tab" href="#outcomes-section" role="tab" aria-controls="outcomes" aria-selected="false">Resultados</a>
+              <a class="nav-link" id="sponsor-tab" data-toggle="tab" href="#sponsor-section" role="tab" aria-controls="sponsor" aria-selected="false">Apadrina</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="sponsor-tab" data-toggle="tab" href="#sponsor-section" role="tab" aria-controls="sponsor" aria-selected="false">Apadrina</a>
+              <a class="nav-link" id="outcomes-tab" data-toggle="tab" href="#outcomes-section" role="tab" aria-controls="outcomes" aria-selected="false">Resultados</a>
             </li>
           </ul>
         </div>
@@ -166,12 +166,12 @@
                 <div class="list-group-item list-group-item-action flex-column align-items-start">
                   <div class="d-flex w-100 justify-content-between">
                     <h5 class="mb-1">Refrigerios</h5>
-                    <span class="badge badge-danger">300</span>
+                    <span class="badge badge-danger">500</span>
                   </div>
                   <p class="mb-1">Se repartiran entre toda la comunidad que participe de la jornada de limpieza</p>
                   <small>
                     <div class="progress">
-                      <div class="progress-bar bg-info" role="progressbar" style="width: 1%;" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100">1%</div>
+                      <div class="progress-bar bg-info" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
                     </div>
                   </small>
                 </div>
@@ -191,12 +191,23 @@
 
             </div>
           </div>
+
+          <div class="tab-pane fade" id="sponsor-section" role="tabpanel" aria-labelledby="sponsor-tab">
+            <div id="fb-root"></div>
+            <div class="container">
+              <h2 class="mt-3 mb-4">Apadrina un niño y regala una sonrisa</h2>
+              <div class="embedded-content">
+                <div class="fb-post" data-href="https://www.facebook.com/apadrinaunninoyregalaunasonrisa/posts/2801258553478335" data-show-text="true" data-width=""><blockquote cite="https://www.facebook.com/apadrinaunninoyregalaunasonrisa/posts/2801258553478335" class="fb-xfbml-parse-ignore"><p>Aquellos que son más felices son los que hacen más por otros.” 💗🤗
+                Si bien esta pandemia ha afectado nuestro diario vivir...</p>Posted by <a href="https://www.facebook.com/apadrinaunninoyregalaunasonrisa/">Apadrina un niño y regálale una sonrisa</a> on&nbsp;<a href="https://www.facebook.com/apadrinaunninoyregalaunasonrisa/posts/2801258553478335">Sunday, October 25, 2020</a></blockquote></div>
+              </div>
+            </div>
+          </div>
+          <!-- outcomes -->
           <div class="tab-pane fade" id="outcomes-section" role="tabpanel" aria-labelledby="outcomes-tab">
             <div class="container">
               <h2 class="mt-3 mb-4">Resultados Esperados</h2>
             </div>
           </div>
-          <div class="tab-pane fade" id="sponsor-section" role="tabpanel" aria-labelledby="sponsor-tab">Apadrina un niño y regala una sonrisa</div>
         </div>
         <!-- end content -->
       </section>
@@ -209,5 +220,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- facebook -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="dhAAeQtm"></script>
   </body>
 </html>
