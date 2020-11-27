@@ -1,52 +1,151 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Proyecto Alegría 2020</title>
-    <link type="text/css" rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
     <header class="container-fluid">
-      <h1 class="text-center">ALEGRÍA 2020</h1>
+      <nav class="navbar justify-content-center align-middle">
+        <a href="#" class="menu">ALEGRÍA 2020</a>
+      </nav>
     </header>
-    <!-- <nav>
-    </nav> -->
     <main>
-      <section id:"presentation">
+      <section id="presentation">
         <div class="content">
           <video class="presentation-video" width="100%" controls>
             <source src="public/media/video-test.mp4" type="video/mp4">
-            <!-- <source src="movie.ogg" type="video/ogg"> -->
             Your browser does not support the video tag.
           </video>
         </div>
       </section>
-      <section id:"scroll-sections">
-        <div class="scrollmenu">
-         <a href="#objetives-section">objetives-section</a>
-         <a href="#activities-section">activities-section</a>
-         <a href="#resources-section">resources-section</a>
+      <section id="scroll-sections">
+        <div class="">
+          <ul class="scrollmenu nav nav-tabs" id="projectTabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="objetives-tab" data-toggle="tab" href="#objetives-section" role="tab" aria-controls="objetives" aria-selected="true">Objetivos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="activities-tab" data-toggle="tab" href="#activities-section" role="tab" aria-controls="activities" aria-selected="false">Actividades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="resources-tab" data-toggle="tab" href="#resources-section" role="tab" aria-controls="resources" aria-selected="false">Recursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="outcomes-tab" data-toggle="tab" href="#outcomes-section" role="tab" aria-controls="outcomes" aria-selected="false">Resultados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="sponsor-tab" data-toggle="tab" href="#sponsor-section" role="tab" aria-controls="sponsor" aria-selected="false">Apadrina</a>
+            </li>
+          </ul>
         </div>
-        <div id:"objetives-section" >
-          Objetivos
+        <!-- content -->
+        <div class="tab-content" id="projectTabContent">
+          <div class="tab-pane fade show active" id="objetives-section" role="tabpanel" aria-labelledby="objetives-tab">
+            <div class="container">
+              <h2 class="mb-4">Objetivos</h2>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  Realizar una jornada de limpieza y embellecimiento con todos los habitantes a lo largo del barrio y alrededor de las lagunas.
+                </li>
+                <li class="list-group-item">
+                  Involucrar a la población habitante de calle que permanece en el sector con la jornada de limpieza y cuidado del barrio.
+                </li>
+                <li class="list-group-item">
+                  Desarrollar actividades lúdicas, culturales y deportivas con los niños, niñas, adolescentes y jóvenes del sector.
+                </li>
+                <li class="list-group-item">
+                  Construir un mural de sueños simbólico que permita plasmar y compartir los deseos de los habitantes del sector.
+                </li>
+                <li class="list-group-item">
+                  Compartir alimentación con la población habitante de calle que permanece en el sector.
+                </li>
+                <li class="list-group-item">
+                  Facilitar la entrega de obsequios para los niños, niñas y adolescentes del programa “apadrina un niño, regala una sonrisa”.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="activities-section" role="tabpanel" aria-labelledby="activities-tab">
+            <div class="container">
+              <h2 class="mb-4 mt-3">Planeación de Actividades</h2>
+              <div id="accordion-activities">
+                <div class="card">
+                  <div class="card-header" id="headingJornadaAseo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseJornadaAseo" aria-expanded="true" aria-controls="collapseJornadaAseo">
+                        Jornada de Limpieza y Embellecimiento
+                      </button>
+                    </h5>
+                  </div>
+
+                  <div id="collapseJornadaAseo" class="collapse show" aria-labelledby="headingJornadaAseo" data-parent="#accordion-activities">
+                    <div class="card-body">
+                      Desde las 7:00am hasta las 9am se programa una jornada de limpieza con toda la comunidad habitante del sector, para limpiar la calle, las entradas y alrededor de las lagunas.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingDesayunoComunitario">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseDesayunoComunitario" aria-expanded="false" aria-controls="collapseDesayunoComunitario">
+                        Desayuno Comunitario
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseDesayunoComunitario" class="collapse" aria-labelledby="headingDesayunoComunitario" data-parent="#accordion-activities">
+                    <div class="card-body">
+                      Se designa un grupo que se encargue de la preparación de un desayuno comunitario. Dicho desayuno se espera empezar a repartir por grupos desde las 9:00am
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingObsequios">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseObsequios" aria-expanded="false" aria-controls="collapseObsequios">
+                        Obsequios para Niños y Niñas
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseObsequios" class="collapse" aria-labelledby="headingObsequios" data-parent="#accordion-activities">
+                    <div class="card-body">
+                      Desde las 10:30am se espera empezar a entregar los obsequios para los niños y niñas, organizando grupos por edades de la siguiente manera:
+                    </div>
+                  </div>
+                </div>
+                <!-- 4 -->
+                <div class="card">
+                  <div class="card-header" id="headingJornadaRecreativa">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseJornadaRecreativa" aria-expanded="false" aria-controls="collapseJornadaRecreativa">
+                        Jornada Recreativa
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseJornadaRecreativa" class="collapse" aria-labelledby="headingJornadaRecreativa" data-parent="#accordion-activities">
+                    <div class="card-body">
+                      Finalizada la entrega de obsequios, se planea hacer una jornada recreativa como cierre final.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="resources-section" role="tabpanel" aria-labelledby="resources-tab">Recursos Necesarios</div>
+          <div class="tab-pane fade" id="outcomes-section" role="tabpanel" aria-labelledby="outcomes-tab">Resultados Esperados</div>
+          <div class="tab-pane fade" id="sponsor-section" role="tabpanel" aria-labelledby="sponsor-tab">Apadrina un niño y regala una sonrisa</div>
         </div>
-        <div id:"activities-section" >
-          Planeación de Actividades
-        </div>
-        <div id:"resources-section" >
-          Recursos Necesarios
-        </div>
-        <div id:"Outcomes-section" >
-          Resultados Esperados
-        </div>
+        <!-- end content -->
       </section>
       <footer class="text-center">
-        <span>By <span/><a href="https://github.com/SamZapata">@samzapata</a>
+        <span>By <span/><a href="https://github.com/SamZapata" target="_blank">@samzapata</a>
       </footer>
     </main>
 
+    <script type="text/javascript" src="javascript/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

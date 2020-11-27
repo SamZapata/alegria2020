@@ -1,5 +1,17 @@
 .container-fluid {
-  background-color: red;
-  padding: auto;
-  /* padding-bottom: 0.01rem; */
+  background-color: #7b000b;
+  padding-top: 0.1rem;
+}
+
+.navbar {
+  padding: 0.4rem;
+}
+
+ul.nav {
+  flex-wrap: nowrap;
+}
+
+.card-header .btn.btn-link {
+  color: white;
+  font-weight: bold;
 }

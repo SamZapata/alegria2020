@@ -1,32 +1,71 @@
 @import "bootstrap-overrides.css";
 
-h1 {
-  color: red;
+/* ----- Header ----- */
+header a.menu {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
+/* ----- end header ----- */
 
 /* sections */
 #presentation {
   width: calc(100vw);
+  /* height: calc(100%); */
+}
+
+#presentation .content {
+  margin-bottom: -0.5rem;
 }
 
 .presentation-video {
   width: calc(100%);
 }
 
-div.scrollmenu {
+ul.scrollmenu {
   background-color: #333;
   overflow: auto;
   white-space: nowrap;
+  width: calc(100%);
 }
 
-div.scrollmenu a {
-  display: inline-block;
+ul.scrollmenu a.nav-link {
   color: white;
-  text-align: center;
-  padding: 14px;
+}
+
+ul.scrollmenu a.nav-link.active {
+  color: white;
+  background-color: #777;
   text-decoration: none;
 }
 
-div.scrollmenu a:hover {
-  background-color: #777;
+#objetives-section {
+  min-height: calc(50vh);
+  height: calc(100%);
+  padding: 1rem;
+}
+
+#headingJornadaAseo {
+  background-color: #5aa469;
+}
+#headingDesayunoComunitario {
+  background-color: #34626c;
+}
+#headingObsequios {
+  background-color: #fecd1a;
+}
+#headingJornadaRecreativa {
+  background-color: #fd3a69;
+}
+
+@media only screen and (min-width: 700px) {
+  .scrollmenu {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #presentation {
+    width: calc(100vw - 0.8rem);
+  }
 }
