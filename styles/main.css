@@ -58,6 +58,21 @@ ul.scrollmenu a.nav-link.active {
   background-color: #fd3a69;
 }
 
+footer {
+	background-color: #7b000b;
+	height: calc(100% + 2rem);
+  padding: 2rem 0;
+  color: white;
+}
+
+footer a {
+  font-weight: bolder;
+  color: white;
+}
+footer a:hover {
+  color: black;
+}
+
 @media only screen and (min-width: 700px) {
   .scrollmenu {
     display: flex;
