@@ -1,8 +1,9 @@
 @import "bootstrap-overrides.css";
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
-  font-family: 'Nerko One', cursive;
+  font-family: 'Roboto', 'Nerko One', cursive;
 }
 
 main {
@@ -14,6 +15,7 @@ header a.menu {
   color: white;
   font-weight: bold;
   font-size: 1.4rem;
+  font-family: 'Nerko One', cursive;
 }
 /* ----- end header ----- */
 
