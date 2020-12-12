@@ -8,6 +8,8 @@
     <link type="text/css" rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
+    <!-- facebook -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="GiSvHsok"></script>
     <header class="container-fluid">
       <nav class="navbar justify-content-center align-middle">
         <a href="#" class="menu">PROYECTO ALEGRÍA 2020</a>
@@ -26,7 +28,7 @@
         <div id="scrollmenu-options">
           <ul class="scrollmenu nav nav-tabs" id="projectTabs" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about-section" role="tab" aria-controls="objetives" aria-selected="true">Objetivos</a>
+              <a class="nav-link active" id="about-tab" data-toggle="tab" href="#about-section" role="tab" aria-controls="objetives" aria-selected="true">Resumen</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" id="objetives-tab" data-toggle="tab" href="#objetives-section" role="tab" aria-controls="objetives" aria-selected="true">Objetivos</a>
@@ -40,9 +42,9 @@
             <li class="nav-item">
               <a class="nav-link" id="sponsor-tab" data-toggle="tab" href="#sponsor-section" role="tab" aria-controls="sponsor" aria-selected="false">Apadrina</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" id="outcomes-tab" data-toggle="tab" href="#outcomes-section" role="tab" aria-controls="outcomes" aria-selected="false">Resultados</a>
-            </li>
+            </li> -->
           </ul>
         </div>
         <!-- content -->
@@ -63,14 +65,14 @@
                 <li class="list-group-item">
                   Involucrar a la población habitante de calle que permanece en el sector con la jornada de limpieza y cuidado del barrio.
                 </li>
-                <li class="list-group-item">
-                  Desarrollar actividades lúdicas, culturales y deportivas con los niños, niñas, adolescentes y jóvenes del sector.
-                </li>
-                <li class="list-group-item">
+                <!-- <li class="list-group-item">
                   Construir un mural de sueños simbólico que permita plasmar y compartir los deseos de los habitantes del sector.
-                </li>
+                </li> -->
                 <li class="list-group-item">
                   Compartir alimentación con la población habitante de calle que permanece en el sector.
+                </li>
+                <li class="list-group-item">
+                  Desarrollar actividades lúdicas, culturales y deportivas con los niños, niñas, adolescentes y jóvenes del sector.
                 </li>
                 <li class="list-group-item">
                   Facilitar la entrega de obsequios para los niños, niñas y adolescentes del programa “apadrina un niño, regala una sonrisa”.
@@ -86,7 +88,7 @@
                   <div class="card-header" id="headingJornadaAseo">
                     <h5 class="mb-0">
                       <button class="btn btn-link" data-toggle="collapse" data-target="#collapseJornadaAseo" aria-expanded="true" aria-controls="collapseJornadaAseo">
-                        Jornada de Limpieza y Embellecimiento
+                        Jornada de Limpieza
                       </button>
                     </h5>
                   </div>
@@ -121,7 +123,7 @@
                   </div>
                   <div id="collapseObsequios" class="collapse" aria-labelledby="headingObsequios" data-parent="#accordion-activities">
                     <div class="card-body">
-                      Desde las 10:30am se espera empezar a entregar los obsequios para los niños y niñas, organizando grupos por edades de la siguiente manera:
+                      Los obsequios se entregarán a los niños y niñas previamente inscritos. Con base a la información recolectada (datos personales, datos de contacto, fotografía) se crearán grupos de acuerdo al número de la casa donde residen. La entrega de regalos se hará en el salón del comedor del barrio a partir de las 9:00 am.
                     </div>
                   </div>
                 </div>
@@ -156,7 +158,7 @@
                   <p class="mb-1">Se utilizarán para la jornada de limpieza. Se requieren 100 unidades</p>
                   <small>
                     <div class="progress">
-                      <div class="progress-bar bg-info" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">1%</div>
+                      <div class="progress-bar bg-info" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
                     </div>
                   </small>
                 </div>
@@ -175,7 +177,7 @@
                 <div class="list-group-item list-group-item-action flex-column align-items-start">
                   <div class="d-flex w-100 justify-content-between">
                     <h5 class="mb-1">Refrigerios</h5>
-                    <span class="badge badge-danger">500</span>
+                    <span class="badge badge-danger">300</span>
                   </div>
                   <p class="mb-1">Se repartiran entre toda la comunidad que participe de la jornada de limpieza</p>
                   <small>
@@ -208,7 +210,7 @@
                     </div>
                   </small>
                 </div>
-                <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <!-- <div class="list-group-item list-group-item-action flex-column align-items-start">
                   <div class="d-flex w-100 justify-content-between">
                     <h5 class="mb-1">Papel Kraft</h5>
                     <span class="badge badge-danger">5</span>
@@ -219,7 +221,7 @@
                       <div class="progress-bar bg-info" role="progressbar" style="width: 1%;" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100">1%</div>
                     </div>
                   </small>
-                </div>
+                </div> -->
               </div>
 
             </div>
@@ -230,17 +232,17 @@
             <div class="container">
               <h2 class="mt-3 mb-4">Apadrina un niño y regala una sonrisa</h2>
               <div class="embedded-content">
-                <div class="fb-post" data-href="https://www.facebook.com/apadrinaunninoyregalaunasonrisa/posts/2801258553478335" data-show-text="true" data-width=""><blockquote cite="https://www.facebook.com/apadrinaunninoyregalaunasonrisa/posts/2801258553478335" class="fb-xfbml-parse-ignore"><p>Aquellos que son más felices son los que hacen más por otros.” 💗🤗
-                Si bien esta pandemia ha afectado nuestro diario vivir...</p>Posted by <a href="https://www.facebook.com/apadrinaunninoyregalaunasonrisa/">Apadrina un niño y regálale una sonrisa</a> on&nbsp;<a href="https://www.facebook.com/apadrinaunninoyregalaunasonrisa/posts/2801258553478335">Sunday, October 25, 2020</a></blockquote></div>
+                <p>Para saber como apadrinar un niño(a) entra a la página de facebook, allí se explica la dinámica.</p>
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fapadrinaunninoyregalaunasonrisa%2Fposts%2F2801258553478335&show_text=true&width=552&height=990&appId" width="550" height="950" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
               </div>
             </div>
           </div>
           <!-- outcomes -->
-          <div class="tab-pane fade" id="outcomes-section" role="tabpanel" aria-labelledby="outcomes-tab">
+          <!-- <div class="tab-pane fade" id="outcomes-section" role="tabpanel" aria-labelledby="outcomes-tab">
             <div class="container">
               <h2 class="mt-3 mb-4">Resultados Esperados</h2>
             </div>
-          </div>
+          </div> -->
         </div>
         <!-- end content -->
       </section>
@@ -253,7 +255,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- facebook -->
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="dhAAeQtm"></script>
+    
   </body>
 </html>
